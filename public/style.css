@@ -1,0 +1,168 @@
+
+
+:root {
+  font-family: 'Comfortaa', serif, Courier, monospace;
+  font-size: x-large;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #494D5F;
+  overflow-x: auto;
+  overflow-y: scroll;
+  line-height: 1.5em;
+
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+table.help {
+  width: 100%;
+  columns: 50%;
+  background-color: #8478A6;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+td {
+  padding: 0.2em;
+  margin: 0.1em;
+  border-radius: 0.1em;
+  background-color: rgba(0,0,0,0.15);
+}
+
+
+div.sub {
+  background-color: #8478A6;
+  border-radius: 1em;
+  margin-top: 1px;
+  padding: 1em;
+}
+
+
+div.con {
+  margin: 1em;
+}
+
+div.parser {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.cursor {
+  margin-left: 1em;
+  animation-name: cursor-blink;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+}
+
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
+
+div.sep {
+  margin-bottom: 1em;
+}
+
+
+div.exits {
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(64,64,64,0.25));
+  border-radius: 0.5em;
+  padding-top: 0.25em;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+}
+
+
+div.title {
+  margin: 1.5em;
+  color: #a0d2eb;
+  font-size: larger;
+  font-weight: bold;
+}
+
+div.spacer {
+  margin: 2em;
+}
+
+div.big-spacer {
+  margin: 4em;
+}
+
+div.room {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-family: 'Handlee', cursive;
+}
+
+div.res {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  border-radius: 1em;
+  background: linear-gradient(1, #8478A6, #8458B3);
+  box-shadow: 20px 20px 50px #8458B3, 
+            -30px -30px 60px #8478A6;
+}
+
+
+div.spaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+div.lic {
+  font-size: smaller;
+}
+
+
+span.key {
+  background-color: #a0d2eb;
+  color: #8458B3;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  border-radius: 0.1em;
+}
+
+div.header {
+  left: 0;
+  top: 0;
+  width: 98%;
+  height: 1.5em;
+  background-color: #8458B3;
+  color: #d0bdf4;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+}
+
+div.epitaph {
+  font-size: larger;
+  color: #a0d2eb;
+}
